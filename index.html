@@ -1,776 +1,793 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zudio</title>
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zudio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <section id="header">
-        <a href="#"><img src="logoimg.jpg" class="logo" alt=""></a>
-    
 
-      <div>
-        <ul id="navbar">
-            <li><a class="active" href="index.html">Home</a></li>
-             <li><a href="shop.html">Shop</a></li>
-              <li><a href="blog.html">Blog</a></li>
-               <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                 <li><a href="cart.html"><i class="ri-shopping-bag-line"></i></a></li>
-        </ul>
-      </div>
-      <div id="mobile">
-        <a href="cart.html"><i class="ri-shopping-bag-line"></i></a>
-        <i id="bar" class="ri-indent-decrease"></i>
-       
-
-      </div>
-</section>
-
-<section id="hero">
-  <h4>Trade-in-offer</h4>
-  <h2>Super value deals</h2>
-  <h1>On all products</h1>
-  <p>Save more with copons & up to 50% off</p>
-  <button>Shop Now</button>
-</section>
+  <section id="header">
+    <a href="#"><img src="logoimg.jpg" class="logo" alt=""></a>
 
 
-<Section id="feature" class="section-p1">
-  <div class="fe-box">
-    <img src="featureimg1.jpg" alt="">
-    <h6>Free Shipping</h6>
-  </div>
+    <div>
+      <ul id="navbar">
+        <li class="search-box">
+          <form class="search-bar" onsubmit="searchProduct(event)">
+            <input type="search" id="searchBox" placeholder="Search shirts..." maxlength="50">
+            <button type="submit">
+              <i class="ri-search-line"></i>
+            </button>
+          </form>
+        </li>
 
-  <div class="fe-box">
-    <img src="featureimge2.jpg" alt="">
-    <h6>Online Order</h6>
-  </div>
+        </li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="ri-shopping-bag-line"></i></a></li>
 
-  <div class="fe-box">
-    <img src="featureimg3.png" alt="">
-    <h6>Save Money</h6>
-  </div>
+         <a href="#" id="close"><i class="ri-close-circle-line"></i></a>
+      </ul> 
 
-  <div class="fe-box">
-    <img src="featureimg4.jpg" alt="">
-    <h6>Promotions</h6>
-  </div>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="ri-shopping-bag-line"></i></a>
+      <i id="bar" class="ri-indent-decrease"></i>
 
-  <div class="fe-box">
-    <img src="featureimg5.jpg" alt="">
-    <h6>Happy Sell</h6>
-  </div>
 
-  <div class="fe-box">
-    <img src="featureimg6.png" alt="">
-    <h6>F24/7 Support</h6>
-  </div>
-</Section>
+    </div>
+  </section>
 
-<section id="product1"  class="section-p1">
-  <h2>Featured Products</h2>
-  <p>Winter Collection New Morden Design</p>
-  <div class="pro-container">
-    <div class="pro">
-      <img src="product1.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>SLIM FIT EASY-IRON SHIRT</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.1,499.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+  <section id="hero">
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>Save more with copons & up to 50% off</p>
+    <button>Shop Now</button>
+  </section>
+
+
+  <Section id="feature" class="section-p1">
+    <div class="fe-box">
+      <img src="featureimg1.jpg" alt="">
+      <h6>Free Shipping</h6>
     </div>
 
-
-
-     <div class="pro">
-      <img src="product2.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>REGULAR FIT OXFORD SHIRT</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.1,399.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+    <div class="fe-box">
+      <img src="featureimge2.jpg" alt="">
+      <h6>Online Order</h6>
     </div>
 
-
-
-     <div class="pro">
-      <img src="product3.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>REGULAR FIT CORDUROY SHIRT</h5>
-        <div class="star">
-           <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.1,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+    <div class="fe-box">
+      <img src="featureimg3.png" alt="">
+      <h6>Save Money</h6>
     </div>
 
-
-     <div class="pro">
-      <img src="product4.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>REGULAR FIT CORDUROY SHIRT</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.1,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+    <div class="fe-box">
+      <img src="featureimg4.jpg" alt="">
+      <h6>Promotions</h6>
     </div>
 
-
-     <div class="pro">
-      <img src="product5.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>MEN 3-Pack Regular fit T-Shirt</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.1,199.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+    <div class="fe-box">
+      <img src="featureimg5.jpg" alt="">
+      <h6>Happy Sell</h6>
     </div>
 
+    <div class="fe-box">
+      <img src="featureimg6.png" alt="">
+      <h6>F24/7 Support</h6>
+    </div>
+  </Section>
 
-     <div class="pro">
-      <img src="product6.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>Loose Fit Printed T-Shirt</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
+  <section id="product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Winter Collection New Morden Design</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="product1.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>SLIM FIT EASY-IRON SHIRT</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.1,499.00</h4>
         </div>
-        <h4>RS.799.00</h4>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
       </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+
+
+
+      <div class="pro">
+        <img src="product2.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>REGULAR FIT OXFORD SHIRT</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.1,399.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+
+      <div class="pro">
+        <img src="product3.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>REGULAR FIT CORDUROY SHIRT</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.1,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+      <div class="pro">
+        <img src="product4.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>REGULAR FIT CORDUROY SHIRT</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.1,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+      <div class="pro">
+        <img src="product5.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>MEN 3-Pack Regular fit T-Shirt</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.1,199.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+      <div class="pro">
+        <img src="product6.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>Loose Fit Printed T-Shirt</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.799.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+      <div class="pro">
+        <img src="product7.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>Loose Fit Printed T-Shirt</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.799.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product8.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>MEN Orange Loose Fit T-Shirt</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.799.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product9.jpg" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>MEN Black Linen-Blend Trousers</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.2,599.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product10.jpg" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>MEN Beige Regular fit Sweatpants</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.1,399.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product11.jpg" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>MEN Green slim fit cargo Trousers</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.1,840.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product12.jpg" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>MEN Blue Baggy Jeans</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.2,699.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+      <div class="pro">
+        <img src="product13.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>HOODED WINDBREAKER</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.2,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product14.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>LOOSE FIT NYLON WINDBREAKER</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.3,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product15.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>WASHED BOMBER JACKET</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.4,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="product16.webp" alt="">
+        <div class="des">
+          <span>H&M</span>
+          <h5>SLIM FIT LIGHTWEIGHT PUFFER</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <h4>RS.2,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="banner" class="section-m1">
+    <h4>Repair Services</h4>
+    <h2>Up to <span>50% off </span> - All T-SHIRTS & Accessories</h2>
+    <button class="normal">Explore More</button>
+  </section>
+
+
+
+  <section id="product1" class="section-p1">
+    <h2>New Arrivals</h2>
+    <p>Winter Collection New Morden Design</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="new1.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>GREY FOIL PRINT PUFFER JACKET</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.6,499.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new2.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>ZIP-FRONT CASUAL JACKET OLIVE GREEN</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.6,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+      <div class="pro">
+        <img src="new3.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>CLASSIC BLACK LEATHER JACKET</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS16,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+      <div class="pro">
+        <img src="new4.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>DARK BLUE WASHED DENIME JACKET</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.6,636.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new5.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>LINEN FULL SLEEVES SHIRT NAVY BLUE</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.4,499.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new6.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>WHITE EMBROIDERED COTTON OVERSIZE SHIRT</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.6,649.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new7.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>YELLOW CHECK FULL SLEEVES SHIRT</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.1,814.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new8.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>LINEN FULL SLEEVES SHIRT-WHITE</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.4,499.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new9.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>SPLIT NECK KNIT OVERSIZE POLO-BEiGE</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.2,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new10.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>SPLIT NECK KNIT OVERSIZE POLO-BLACK</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.2,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new11.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>BLACK CONTRAST TIPPING COTTON POLO</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.2,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new12.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>BLACK CONTRAST TIPPING COTTON POLO</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.2,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new13.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>5 POCKET DISTRESSED BOOTCUT JEANS</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.7,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new14.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>POCKET HIGH RISE DARIO LOOSE FIT JEANS</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.5,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new15.jpg" alt="">
+        <div class="des">
+          <span>J&J</span>
+          <h5>POCKET CROPPED TIM SLIM FIT JEANS</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.4,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="new16.jpg" alt="">
+        <div class="des">
+          <span>J&JM</span>
+          <h5>POCKET CROPPED TIM SLIM FIT JEANS</h5>
+          <div class="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+
+          </div>
+          <h4>RS.4,999.00</h4>
+        </div>
+        <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <section id="sm-banner" class="section-p1">
+    <div class="banner-box">
+      <h4>Crazy deals</h4>
+      <h2>Buy 1get 1 free</h2>
+      <span>The best classic dress is on sale at care</span>
+      <button class="white">Learn More</button>
     </div>
 
+    <div class="banner-box banner-box2">
+      <h4>Winter</h4>
+      <h2>Upcomming Season</h2>
+      <span>The best classic dress is on sale at care</span>
+      <button class="white">Collection</button>
+    </div>
+  </section>
 
-     <div class="pro">
-      <img src="product7.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>Loose Fit Printed T-Shirt</h5>
-        <div class="star">
-           <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.799.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
+
+  <section id="banner3">
+
+    <div class="banner-box ">
+      <h2>SEASONAL SALE</h2>
+      <h3>Winter Collection -50% OFF</h3>
     </div>
 
-     <div class="pro">
-      <img src="product8.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>MEN Orange Loose Fit T-Shirt</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.799.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-     <div class="pro">
-      <img src="product9.jpg" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>MEN Black Linen-Blend Trousers</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.2,599.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-     <div class="pro">
-      <img src="product10.jpg" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>MEN Beige Regular fit Sweatpants</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.1,399.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-     <div class="pro">
-      <img src="product11.jpg" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>MEN Green slim fit cargo Trousers</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.1,840.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-    <div class="pro">
-      <img src="product12.jpg" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>MEN Blue Baggy Jeans</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.2,699.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-
-    <div class="pro">
-      <img src="product13.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>HOODED WINDBREAKER</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.2,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-    <div class="pro">
-      <img src="product14.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>LOOSE FIT NYLON WINDBREAKER</h5>
-        <div class="star">
-           <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.3,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-    <div class="pro">
-      <img src="product15.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>WASHED BOMBER JACKET</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.4,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-    <div class="pro">
-      <img src="product16.webp" alt="">
-      <div class="des">
-        <span>H&M</span>
-        <h5>SLIM FIT LIGHTWEIGHT PUFFER</h5>
-        <div class="star">
-          <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-        </div>
-        <h4>RS.2,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-  </div>
-</section>
-
-<section id="banner" class="section-m1">
-  <h4>Repair Services</h4>
-  <h2>Up to <span>50% off </span> - All T-SHIRTS & Accessories</h2>
-  <button class="normal">Explore More</button>
-</section>
-
-
-
-<section id="product1"  class="section-p1">
-  <h2>New Arrivals</h2>
-  <p>Winter Collection New Morden Design</p>
-  <div class="pro-container">
-    <div class="pro">
-      <img src="new1.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>GREY FOIL PRINT PUFFER JACKET</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.6,499.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-  
-    <div class="pro">
-      <img src="new2.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>ZIP-FRONT CASUAL JACKET OLIVE GREEN</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.6,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-
-    <div class="pro">
-      <img src="new3.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>CLASSIC BLACK LEATHER JACKET</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS16,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-
-    <div class="pro">
-      <img src="new4.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>DARK BLUE WASHED DENIME JACKET</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.6,636.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-   <div class="pro">
-      <img src="new5.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>LINEN FULL SLEEVES SHIRT NAVY BLUE</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.4,499.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new6.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>WHITE EMBROIDERED COTTON OVERSIZE SHIRT</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.6,649.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new7.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>YELLOW CHECK FULL SLEEVES SHIRT</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.1,814.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new8.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>LINEN FULL SLEEVES SHIRT-WHITE</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.4,499.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new9.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>SPLIT NECK KNIT OVERSIZE POLO-BEiGE</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.2,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new10.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>SPLIT NECK KNIT OVERSIZE POLO-BLACK</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.2,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new11.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>BLACK CONTRAST TIPPING COTTON POLO</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.2,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new12.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>BLACK CONTRAST TIPPING COTTON POLO</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.2,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new13.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>5 POCKET DISTRESSED BOOTCUT JEANS</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.7,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new14.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>POCKET HIGH RISE DARIO LOOSE FIT JEANS</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.5,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new15.jpg" alt="">
-      <div class="des">
-        <span>J&J</span>
-        <h5>POCKET CROPPED TIM SLIM FIT JEANS</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.4,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
- <div class="pro">
-      <img src="new16.jpg" alt="">
-      <div class="des">
-        <span>J&JM</span>
-        <h5>POCKET CROPPED TIM SLIM FIT JEANS</h5>
-        <div class="star">
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-         <i class="ri-star-fill"></i>
-          
-        </div>
-        <h4>RS.4,999.00</h4>
-      </div>
-      <a href="#"><i class="ri-shopping-cart-fill cart"></i></a>
-    </div>
-
-
-
-  </div>
-</section>
-
-
-<section id="sm-banner" class="section-p1">
-  <div class="banner-box">
-    <h4>Crazy deals</h4>
-    <h2>Buy 1get 1 free</h2>
-    <span>The best classic dress is on sale at care</span>
-    <button class="white">Learn More</button>
-  </div>
-
-   <div class="banner-box banner-box2">
-    <h4>Winter</h4>
-    <h2>Upcomming Season</h2>
-    <span>The best classic dress is on sale at care</span>
-    <button class="white">Collection</button>
-  </div>
-</section>
-
-
-<section id="banner3">
-  
-   <div class="banner-box ">
-    <h2>SEASONAL SALE</h2>
-    <h3>Winter Collection -50% OFF</h3>
-  </div>
-
-  <div class="banner-box banner-box2">
-    <h2>NEW FOOTWEAR COLLESTION</h2>
+    <div class="banner-box banner-box2">
+      <h2>NEW FOOTWEAR COLLESTION</h2>
       <h3>Winter 2026</h3>
-  </div>
-
-  <div class="banner-box banner-box3">
-    <h2>T-SHIRTS</h2>
-    <h3>NEW TRENDY PRINTS</h3>
-  </div>
-</section>
-
-<section id="newsletter" class="section-p1 section-m1">
-  <div class="newstext">
-    <h4>Sing Up For newsletters</h4>
-    <p>Get E-mail updates adout our latest shop and <span>special offers.</span>
-    </p>
-  </div>
-  <div class="form">
-    <input type="text" placeholder="Your email address">
-    <button class="normal">Sign Up</button>
-  </div>
-</section>
-
-<footer class="section-p1">
-  <div class="col">
-    <img class="logo" src="logoimg.jpg" alt="">
-    <h4>Contact</h4>
-      <p> <strong>Address:</strong> Mumbai </p>
-       <p> <strong>Phone:</strong> (+91) 93090 62170 / (+91) 76660 12989 </p>
-     <p> <strong>Hours:</strong> 9:00 - 21:00, Mon - Sun </p>
-<div class="follow">
-  <h4>Follow Us</h4>
-  <div class="icon">
-   <i class="ri-facebook-circle-fill"></i>
-   <i class="ri-instagram-fill"></i>
-<i class="ri-twitter-x-fill"></i>  </div>
-<i class="ri-youtube-fill"></i>
-</div>
-  </div>
-
-  <div class="col">
-    <h4>About</h4>
-    <a href="#">About Us</a>
-    <a href="#">Delivery Information</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms & Conditions</a>
-    <a href="#">Contact Us</a>
-  </div>
-
-<div class="col">
-    <h4>My Account</h4>
-    <a href="#">Sign In</a>
-    <a href="#">View Cart</a>
-    <a href="#">My Wishlist</a>
-    <a href="#">Track My Order</a>
-    <a href="#">Help</a>
-  </div>
-  
-  <div class="col install">
-    <h4>Install App</h4>
-    <p>From App store Or Google Play</p>
-    <div class="row">
-      <img src="app1 2.png" alt=""><img src="app2 3.png" alt="">
     </div>
-    <P>Secured Payment Gateways</P>
-  </div>
-  
+
+    <div class="banner-box banner-box3">
+      <h2>T-SHIRTS</h2>
+      <h3>NEW TRENDY PRINTS</h3>
+    </div>
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sing Up For newsletters</h4>
+      <p>Get E-mail updates adout our latest shop and <span>special offers.</span>
+      </p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="logoimg.jpg" alt="">
+      <h4>Contact</h4>
+      <p> <strong>Address:</strong> Mumbai </p>
+      <p> <strong>Phone:</strong> (+91) 93090 62170 / (+91) 76660 12989 </p>
+      <p> <strong>Hours:</strong> 9:00 - 21:00, Mon - Sun </p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="ri-facebook-circle-fill"></i>
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-twitter-x-fill"></i>
+        </div>
+        <i class="ri-youtube-fill"></i>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App store Or Google Play</p>
+      <div class="row">
+        <img src="app1 2.png" alt=""><img src="app2 3.png" alt="">
+      </div>
+      <P>Secured Payment Gateways</P>
+    </div>
 
 
-<div class="copyright">
-  <p>2026, Tech3 etc - HTML CSS Javascript Ecommerce Template</p>
-</div>
-</footer>
+
+    <div class="copyright">
+      <p>2026, Tech3 etc - HTML CSS Javascript Ecommerce Template</p>
+    </div>
+  </footer>
 
 
 
-    <script src="scirpt.js"></script>
+  <script src="scirpt.js"></script>
 </body>
+
 </html>
